@@ -4,7 +4,7 @@ public class AverageDoubleLists {
 
     // write out these too
     public Double count(ArrayList<Double> aa) {
-        return null;
+        return (double) aa.size();
     }
     public Double sum(ArrayList<Double> aa) {
         return null;

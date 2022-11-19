@@ -6,7 +6,10 @@ class AverageDoubleListsTest {
 
     @Test
     void count() {
-        assertEquals(null, "");
+        AverageDoubleLists listNew = new AverageDoubleLists();
+        String []    arr = {"roll", "bounce"};
+        double expected = 2;
+        assertEquals(expected, listNew.count(arr));
     }
 
     @Test

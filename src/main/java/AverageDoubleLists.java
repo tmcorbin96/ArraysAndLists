@@ -7,10 +7,18 @@ public class AverageDoubleLists {
         return (double) aa.size();
     }
     public Double sum(ArrayList<Double> aa) {
-        return null;
+        double equal = 0;
+        for (int i=0; i<aa.size(); i++) {
+            equal += aa.get(i);
+        }
+        return equal;
     }
     public Double average(ArrayList<Double> aa) {
-        return null;
+
+      //  if (aa.size()>0) {
+         //   return equal( / aa.size();
+       // }
+        return sum(aa)/aa.size();
     }
 
 }

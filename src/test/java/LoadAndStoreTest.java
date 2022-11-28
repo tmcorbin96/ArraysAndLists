@@ -7,6 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class LoadAndStoreTest {
 
     // write all these out too.
+    LoadAndStore laod = new LoadAndStore();
+//    String text1 = ;
+//    String text2 = ;
 
     @BeforeEach
     void setUp() {

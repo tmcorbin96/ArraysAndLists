@@ -18,10 +18,13 @@ class LoadAndStoreTest {
     @AfterEach
     void tearDown() {
     }
-
+    LoadAndStore ls = new LoadAndStore();
     @Test
-    void loadIntArrayFromFile() {
-        assertEquals(null, "");
+    void loadIntArrayFromFileTest() {
+
+        int[] expected = {4,5,6,11,13,8,9,7,14,18};
+        int[] actual = ls.loadIntArrayFromFile("/Users/taylor/Projects/ArraysAndLists/testIntegerData1.txt");
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -30,8 +33,10 @@ class LoadAndStoreTest {
     }
 
     @Test
-    void loaddoubleArrayFromFile() {
-        assertEquals(null, "");
+    void loadDoubleArrayFromFile() {
+        double [] expected = {4.4,5.5,6.34,11.0001,13.004,8.7,9.97060,7.4532,14.5,18.00023132123};
+        double [] actual = ls.loadDoubleArrayFromFile("/Users/taylor/Projects/ArraysAndLists/testDoubleData2.txt");
+        assertEquals(expected, actual);
     }
 
     @Test
